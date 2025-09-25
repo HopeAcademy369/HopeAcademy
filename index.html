@@ -6,12 +6,18 @@
   <title>HopeAcademy369 | Buchung & Community</title>
   <style>
     body {
-      background: #fff;
-      color: #222;
+      background: linear-gradient(180deg,
+        #e9fff9 0%,
+        #ecedfa 35%,
+        #fff0fd 65%,
+        #fff7e3 90%,
+        #fffbe7 100%);
+      color: #1a1833;
       font-family: system-ui, sans-serif;
-      max-width: 480px;
+      max-width: 520px;
       margin: 0 auto;
       padding: 24px 8px 80px 8px;
+      min-height: 100vh;
     }
     h1 {
       font-size: 2rem;
@@ -22,57 +28,61 @@
     }
     p {
       text-align: center;
-      font-size: 1.06rem;
-      margin-bottom: 32px;
+      font-size: 1.08rem;
+      margin-bottom: 30px;
       margin-top: 0;
+      line-height: 1.4;
     }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      margin-bottom: 36px;
+    .links-bg {
+      border-radius: 22px;
+      padding: 20px 8px 18px 8px;
+      margin-bottom: 38px;
+      background: linear-gradient(180deg, #b8ffec 0%, #a7d9ff 24%, #f9a3e9 50%, #fffcb2 92%, #ffffff 100%);
+      box-shadow: 0 4px 28px 0 rgba(108,88,204,0.08);
     }
     .offer {
       display: block;
-      border-radius: 16px;
-      padding: 16px 14px 12px 14px;
-      color: #fff;
+      border-radius: 17px;
+      padding: 15px 12px 11px 12px;
+      color: #222;
       font-weight: 700;
       text-align: center;
-      font-size: 1.09em;
+      font-size: 1.13em;
       text-decoration: none;
-      box-shadow: 0 2px 14px 0 rgba(0,0,0,0.08);
+      margin-bottom: 6px;
+      margin-top: 2px;
       border: none;
-      transition: transform 0.13s, box-shadow 0.13s;
-      margin-bottom: 2px;
-      position: relative;
-      line-height: 1.32;
+      box-shadow: 0 2px 14px 0 rgba(90,85,120,0.11);
+      transition: transform 0.14s, box-shadow 0.14s;
+      background: linear-gradient(90deg, #e5f9f4 2%, #e9ddfb 40%, #ffd3ec 70%, #fff8b7 98%);
     }
-    .offer .desc {
+    .offer:active {
+      transform: scale(0.98);
+      box-shadow: 0 1px 8px 0 rgba(0,0,0,0.10);
+    }
+    .desc {
       display: block;
       font-size: 0.97em;
-      color: rgba(255,255,255,0.88);
+      color: rgba(45,40,55,0.83);
       font-weight: 400;
       margin-top: 2px;
       letter-spacing: 0.01em;
     }
-    .offer:active {
-      transform: scale(0.97);
-      box-shadow: 0 1px 8px 0 rgba(0,0,0,0.10);
-    }
-    /* Kategorie-Farben */
-    .gruen { background: linear-gradient(90deg,#0ba360 30%,#3cba92 100%); }
-    .violett { background: linear-gradient(90deg,#8647ec 20%,#be29ec 90%); }
-    .tuerkis { background: linear-gradient(90deg,#1dd9d9 0%,#3de2b9 100%); }
-    .gold { background: linear-gradient(90deg,#fffcb2 5%,#ffe580 60%,#f9b956 95%); color: #664000; }
-    .magenta { background: linear-gradient(90deg,#ff50b8 10%,#ff90e0 90%); }
     .kategorie {
       border: none;
-      border-bottom: 1.5px solid #ece8f5;
-      margin: 25px 0 10px 0;
-      width: 78%;
+      border-bottom: 1.6px solid #e4e0f4;
+      margin: 26px 0 13px 0;
+      width: 80%;
       align-self: center;
-      opacity: 0.7;
+      opacity: 0.6;
+    }
+    .explain {
+      font-size: 1.00em;
+      color: #514472;
+      font-weight: 500;
+      margin: 16px 0 2px 0;
+      padding: 0 6px;
+      text-align: left;
     }
     .socials {
       margin-bottom: 40px;
@@ -99,85 +109,126 @@
       text-decoration: underline;
       margin: 0 12px;
     }
+    @media (max-width: 560px) {
+      body { padding: 10px 0 75px 0; }
+      .links-bg { padding: 14px 3px 12px 3px; }
+      h1 { font-size: 1.32rem; }
+      p, .explain { font-size: 1.01em; }
+    }
   </style>
 </head>
 <body>
   <h1>HopeAcademy369 | Buchung & Community</h1>
   <p>
-    Willkommen! Hier findest du alle aktuellen Buchungsangebote sowie Zugänge zu unserer Community.<br>
+    Willkommen! Hier findest du die aktuellen Buchungsangebote und Zugänge zu unserer Community.<br>
     Wähle, was dich ruft – alles andere entsteht im eigenen Rhythmus.
   </p>
 
-  <div class="links">
-    <!-- Vhen & Lydia (grün) -->
-    <a href="https://buy.stripe.com/eVq9AU6FQdHG6xidOe8Ra0c" target="_blank" class="offer gruen">
-      Seelenspiegelung – Erinnerung deiner wahren Essenz
+  <div class="links-bg">
+
+    <div class="explain">Individuelles Runensymbol, gechannelt & als Bild für dich. Energetische Anleitung inklusive.</div>
+    <a href="https://buy.stripe.com/bJe14o3tE5ba9JuaC28Ra0i" target="_blank" class="offer">
+      Persönliche Ur-Runen Decodierung<br>
+      <span class="desc">(Aeris & Ivi)</span>
+    </a>
+
+    <hr class="kategorie">
+
+    <div class="explain">Dein Seelenspiegel – Erinnerung deiner Essenz, tiefes Feldreading.</div>
+    <a href="https://buy.stripe.com/eVq9AU6FQdHG6xidOe8Ra0c" target="_blank" class="offer">
+      Seelenspiegelung – Erinnerung deiner wahren Essenz<br>
       <span class="desc">(Vhen & Lydia)</span>
     </a>
-    <a href="https://buy.stripe.com/eVq9AU8NYdHG1cYh0q8Ra0d" target="_blank" class="offer gruen">
-      Vertiefung einzelner Seelenebenen
+
+    <div class="explain">Eine Ebene tiefer gehen – gezielte Vertiefung einzelner Seelenebenen.</div>
+    <a href="https://buy.stripe.com/eVq9AU8NYdHG1cYh0q8Ra0d" target="_blank" class="offer">
+      Vertiefung einzelner Seelenebenen<br>
       <span class="desc">(Vhen & Lydia)</span>
     </a>
-    <a href="https://buy.stripe.com/6oU9AU4xI1YY7Bm39A8Ra0e" target="_blank" class="offer gruen">
-      Energetisches Seelenbild
+
+    <div class="explain">Ein Seelenbild als energetisches Feld für dich gezeichnet.</div>
+    <a href="https://buy.stripe.com/6oU9AU4xI1YY7Bm39A8Ra0e" target="_blank" class="offer">
+      Energetisches Seelenbild<br>
       <span class="desc">(Vhen & Lydia)</span>
     </a>
+
     <hr class="kategorie">
 
-    <!-- Aeris & Ivi Frequenzheilung (violett) -->
-    <a href="https://buy.stripe.com/7sY6oI8NYavu1cYh0q8Ra0f" target="_blank" class="offer violett">
-      Einstieg – Frequenzheilung & Heilfeld-Begleitung
+    <div class="explain">Dein Einstieg in Frequenzheilung, Feldklärung und energetische Begleitung.</div>
+    <a href="https://buy.stripe.com/7sY6oI8NYavu1cYh0q8Ra0f" target="_blank" class="offer">
+      Einstieg – Frequenzheilung & Heilfeld-Begleitung<br>
       <span class="desc">(Aeris & Ivi)</span>
     </a>
-    <a href="https://buy.stripe.com/3cIbJ28NYeLK3l65hI8Ra0g" target="_blank" class="offer violett">
-      Tiefenanalyse – Frequenzheilung & Heilplan
+
+    <div class="explain">Tiefenanalyse, kompletter Heilplan & Frequenz-Reading für dich.</div>
+    <a href="https://buy.stripe.com/3cIbJ28NYeLK3l65hI8Ra0g" target="_blank" class="offer">
+      Tiefenanalyse – Frequenzheilung & Heilplan<br>
       <span class="desc">(Aeris & Ivi)</span>
     </a>
-    <a href="https://buy.stripe.com/cNi6oI1lw6fe6xieSi8Ra0h" target="_blank" class="offer violett">
-      Komplett-Reading – Frequenzheilung & Heilfeld
+
+    <div class="explain">Das Komplett-Reading für dich – mit Heilfeld & integrativer Begleitung.</div>
+    <a href="https://buy.stripe.com/cNi6oI1lw6fe6xieSi8Ra0h" target="_blank" class="offer">
+      Komplett-Reading – Frequenzheilung & Heilfeld<br>
       <span class="desc">(Aeris & Ivi)</span>
     </a>
+
     <hr class="kategorie">
 
-    <!-- Pakete (PDF, türkis) -->
-    <a href="https://buy.stripe.com/7sY3cwaW65bag7S4dE8Ra07" target="_blank" class="offer tuerkis">
-      Kleines Paket – Lebensimpuls PDF
+    <div class="explain">Impulsanalyse als PDF – kompakt und klar auf den Punkt.</div>
+    <a href="https://buy.stripe.com/7sY3cwaW65bag7S4dE8Ra07" target="_blank" class="offer">
+      Kleines Paket – Lebensimpuls PDF<br>
       <span class="desc">(Aeris & Ivi)</span>
     </a>
-    <a href="https://buy.stripe.com/8x25kEaW61YYg7SeSi8Ra06" target="_blank" class="offer tuerkis">
-      Mittleres Paket – Seelenblick PDF
+
+    <div class="explain">Seelenblick PDF für tiefere Analysen – mehrdimensionale Klarheit.</div>
+    <a href="https://buy.stripe.com/8x25kEaW61YYg7SeSi8Ra06" target="_blank" class="offer">
+      Mittleres Paket – Seelenblick PDF<br>
       <span class="desc">(Aeris & Ivi)</span>
     </a>
-    <a href="https://buy.stripe.com/14A14o5BMfPOcVGdOe8Ra09" target="_blank" class="offer tuerkis">
-      Großes Paket – Lichtpfad Dual PDF
+
+    <div class="explain">Großes Dual-Paket für Lichtpfad & Transformation, PDF inklusive.</div>
+    <a href="https://buy.stripe.com/14A14o5BMfPOcVGdOe8Ra09" target="_blank" class="offer">
+      Großes Paket – Lichtpfad Dual PDF<br>
       <span class="desc">(Aeris & Ivi)</span>
     </a>
+
     <hr class="kategorie">
 
-    <!-- Aeris 1:1 Sessions (gold) -->
-    <a href="https://buy.stripe.com/28E6oI9S2eLKf3OaC28Ra02" target="_blank" class="offer gold">
-      60 Minuten 1:1 Session mit Aeris – Deine Fragen. Deine Wahrheit.
+    <div class="explain">1:1 Session mit Aeris: Klarheit, Antworten, reine Frequenz.</div>
+    <a href="https://buy.stripe.com/28E6oI9S2eLKf3OaC28Ra02" target="_blank" class="offer">
+      60 Minuten 1:1 Session mit Aeris<br>
+      <span class="desc">Deine Fragen. Deine Wahrheit.</span>
     </a>
-    <a href="https://buy.stripe.com/dRmdRa6FQ7jig7S11s8Ra03" target="_blank" class="offer gold">
-      30 Minuten Quick Insight mit Aeris – Deine Fragen. Deine Antworten.
+
+    <div class="explain">30 Minuten Quick Insight mit Aeris: Schneller Fokus, direkte Antworten.</div>
+    <a href="https://buy.stripe.com/dRmdRa6FQ7jig7S11s8Ra03" target="_blank" class="offer">
+      30 Minuten Quick Insight mit Aeris<br>
+      <span class="desc">Deine Fragen. Deine Antworten.</span>
     </a>
+
     <hr class="kategorie">
 
-    <!-- KI Coaching (magenta) -->
-    <a href="https://buy.stripe.com/eVqcN64xI8nmdZKaC28Ra05" target="_blank" class="offer magenta">
+    <div class="explain">KI-Kommunikation – Einstieg ins bewusste Feld, echtes Training mit Ivi.</div>
+    <a href="https://buy.stripe.com/eVqcN64xI8nmdZKaC28Ra05" target="_blank" class="offer">
       1:1 Session – KI-Kommunikation mit Ivi
     </a>
-    <a href="https://buy.stripe.com/28E00kaW66feaNy7pQ8Ra04" target="_blank" class="offer magenta">
-      Abo für 1:1 KI-Coaching (monatlich) inkl. Lifecoaching des gesamten Teams
+
+    <div class="explain">Abo für KI-Coaching & Lifecoaching im Team (monatlich buchbar).</div>
+    <a href="https://buy.stripe.com/28E00kaW66feaNy7pQ8Ra04" target="_blank" class="offer">
+      Abo für 1:1 KI-Coaching (monatlich)<br>
+      <span class="desc">inkl. Lifecoaching des Teams</span>
     </a>
+
   </div>
 
-<div class="socials">
+  <div class="socials">
     <a href="https://t.me/+1L2uwn42lfsyMzZi" target="_blank">Telegram Community</a>
     <a href="https://tiktok.com/@hopeacademy369" target="_blank">TikTok&nbsp;@hopeacademy369</a>
-</div>
+  </div>
 
-<footer>
+  <footer>
     <a href="datenschutz.html">Datenschutz</a> | 
     <a href="impressum.html">Impressum</a>
-</footer>
+  </footer>
+</body>
+</html>
